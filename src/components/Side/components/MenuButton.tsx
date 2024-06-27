@@ -1,4 +1,3 @@
-import React from "react";
 import { ISection } from "./SectionButton";
 
 export const MenuButtonActive = ({ item }: { item: ISection }) => {
