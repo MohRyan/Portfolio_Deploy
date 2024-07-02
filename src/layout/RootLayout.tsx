@@ -15,17 +15,17 @@ export const customTheme = [
 const RootLayout = () => {
   const [theme, setTheme] = useState<string>("");
   const [dark, setDark] = useState<string>("");
-  console.log("🚀 ~ RootLayout ~ theme:", theme);
+  const [showCvMobile, setShowCvMobile] = useState<string>("w-[15%]")
   return (
     <>
-      <div className={`flex w-screen ${theme} ${dark}`}>
-        <div style={{ flex: "0.6" }} className="overflow-auto">
-          <Cv />
+      <div className={`flex ${theme} ${dark} w-screen justify-center`}>
+        <div className={`${showCvMobile}`}>
+          <Cv setShowCvMobile={setShowCvMobile} />
         </div>
-        <div style={{ flex: "3" }}>
+        <div className="lg:w-[70%] w-[75%]">
           <Outlet />
         </div>
-        <div style={{ flex: "0.3" }} className="">
+        <div className="lg:w-[6%] w-[15%]">
           <Menu setTheme={setTheme} setDark={setDark} />
         </div>
       </div>

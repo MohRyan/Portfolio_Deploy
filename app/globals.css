@@ -143,3 +143,10 @@
 * {
   scroll-behavior: smooth;
 }
+
+.icon {
+  @apply p-2 rounded-full shadow-xl bg-gradient-to-t to-slate-300 from-white
+}
+.iconActive {
+  @apply p-2 rounded-full shadow-xl bg-gradient-to-t to-first from-white
+}

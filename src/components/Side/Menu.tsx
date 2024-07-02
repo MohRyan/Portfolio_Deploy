@@ -2,11 +2,11 @@ import React, { useState } from "react";
 import { FiSun } from "react-icons/fi";
 import { GiMoon } from "react-icons/gi";
 import { Switch } from "../ui/switch";
-import { FaFileCode, FaUserGraduate } from "react-icons/fa6";
-import { FaBriefcase } from "react-icons/fa6";
+import { FaFileCode } from "react-icons/fa6";
 import SectionButton from "./components/SectionButton";
 import { IoMdHome } from "react-icons/io";
 import { customTheme } from "@/layout/RootLayout";
+import { MdContactMail } from "react-icons/md"
 
 const menuList = [
   {
@@ -19,15 +19,20 @@ const menuList = [
     section: "myProject",
     icon: <FaFileCode />,
   },
+  // {
+  //   title: "My Plant",
+  //   section: "myPlant",
+  //   icon: <FaUserGraduate />,
+  // },
+  // {
+  //   title: "Case",
+  //   section: "case",
+  //   icon: <FaBriefcase />,
+  // },
   {
-    title: "My Plant",
-    section: "myPlant",
-    icon: <FaUserGraduate />,
-  },
-  {
-    title: "Case",
-    section: "case",
-    icon: <FaBriefcase />,
+    title: "Contact",
+    section: "contact",
+    icon: <MdContactMail />,
   },
 ];
 
@@ -48,12 +53,12 @@ const Menu = ({
   return (
     <>
       <div
-        className={`fixed bg-white dark:bg-dark w-24 h-screen flex justify-center`}
+        className={`fixed bg-white dark:bg-dark w-20 right-0 h-screen flex justify-center`}
       >
         <div className="my-5">
           <div className="relative flex items-center justify-center my-3">
-            {!iconDark && <FiSun className="absolute right-8 z-10" />}
-            {iconDark && <GiMoon className="absolute left-[30px] z-10" />}
+            {!iconDark && <FiSun className="absolute z-10 right-6" />}
+            {iconDark && <GiMoon className="absolute left-[22px] z-10" />}
 
             <Switch
               onCheckedChange={(e) => {
@@ -85,21 +90,21 @@ const Menu = ({
                     setTheme(item.split(" ")[0]);
                     setShowCustomTheme("hidden");
                   }}
-                  className={`cursor-pointer w-full flex gap-3 items-center justify-center ${
-                    item.split(" ")[2]
-                  }`}
+                  className={`cursor-pointer w-full flex gap-3 items-center justify-center ${item.split(" ")[2]
+                    }`}
                 >
                   <b>{item.split(" ")[1]}</b>
                 </div>
               ))}
             </div>
           </div>
-          <div className="flex flex-col gap-3 my-2">
+          <div className="flex flex-col gap-3 my-2 ">
             {menuList.map((item, index: number) => (
               <a
                 href={`#${item.section}`}
                 key={index}
                 onClick={() => setSectionName(item.section)}
+
               >
                 <SectionButton sectionId={sectionName} item={item} />
               </a>
