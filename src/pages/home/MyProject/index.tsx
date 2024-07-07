@@ -28,7 +28,7 @@ const dataMyProject: IDataMyProject[] = [
   {
     id: 1,
     title: "Real Estate",
-    img: "./src/assets/RealEstate.png",
+    img: "https://res.cloudinary.com/divsnxhmw/image/upload/v1719990456/Portfolio/wwispy7jbuzk17kucarn.png",
     status: Kategori.comingSoon,
     responsive: Responsive.responsive,
     inspired: "VictorFlow https://www.figma.com/@victorflow",
@@ -36,7 +36,7 @@ const dataMyProject: IDataMyProject[] = [
   {
     id: 2,
     title: "Lakoe",
-    img: "./src/assets/tandaTanya.jpg",
+    img: "https://res.cloudinary.com/divsnxhmw/image/upload/v1719990440/Portfolio/ckvw6go2iauwdw5upzcr.jpg",
     status: Kategori.comingSoon,
     responsive: Responsive.noResponsive,
     inspired: "DumbwaysId https://dumbways.id/",

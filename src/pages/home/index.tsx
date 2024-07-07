@@ -3,6 +3,7 @@ import Slider from "./slider/Index";
 import MyProject from "./MyProject";
 import Hero from "./Hero";
 import MyForm from "./MyForm";
+import Maps from "./Maps";
 
 const Home = () => {
   return (
@@ -17,6 +18,9 @@ const Home = () => {
         </section>
         <section id="contact">
           <MyForm />
+        </section>
+        <section id="maps">
+          <Maps />
         </section>
       </div>
     </>

@@ -9,7 +9,7 @@ import { AiOutlineDownload } from "react-icons/ai";
 import { FaArrowCircleRight, FaArrowCircleLeft } from "react-icons/fa"
 import CvMobile from "./components/CV/CvMobile";
 
-export const FotoProfile = "https://img.id.my-best.com/product_images/5ca3b281da356f4ce888109b36e3e30f.png?ixlib=rails-4.3.1&q=70&lossless=0&w=800&h=800&fit=clip&s=bc458338e149647bc1a41d857f98ccce"
+export const FotoProfile = "https://res.cloudinary.com/divsnxhmw/image/upload/v1720275146/Portfolio/Profile/zpsisozrmnemianupedr.jpg"
 
 export const iconsCV = [
   {
@@ -161,8 +161,8 @@ const Cv = ({ setShowCvMobile }: IProps) => {
               )}
             </ul>
           </div>
-          <div className="flex justify-center">
-            <Button>
+          <div className="flex justify-center ">
+            <Button className="text-textBase">
               Download CV <AiOutlineDownload className="pl-2 text-2xl" />
             </Button>
           </div>
