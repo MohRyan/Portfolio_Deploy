@@ -20,29 +20,27 @@ const CvMobile = () => {
                     <NavigationMenuItem className='relative group/profile'>
                         <NavigationMenuTrigger className='icon group-hover/profile:to-second group-hover/profile:from-white'><IoPersonCircleSharp size={25} /></NavigationMenuTrigger>
                         <NavigationMenuContent className='absolute top-0 p-5 bg-white rounded-lg shadow-xl left-12'>
-                            <NavigationMenuLink>
-                                <div className="flex flex-col items-center justify-center gap-2 pb-2">
-                                    <div>
-                                        <img
-                                            className="object-cover w-20 h-20 bg-gray-300 rounded-full"
-                                            src={FotoProfile}
-                                            alt=""
-                                        />
-                                    </div>
-                                    <b className="w-32 text-center">Moh Ryan Khalifatul Huda</b>
-                                    <p>..... Developer</p>
-                                    <ul className="flex gap-3 justify-evenly">
-                                        {iconsCV.map((item, index) => (
-                                            <Link to={item.link} key={index}>
-                                                <li
-                                                    className="p-2 text-sm rounded-full text-textBase bg-first hover:bg-second"
-                                                >
-                                                    {item.icon}
-                                                </li>
-                                            </Link>
-                                        ))}
-                                    </ul>
+                            <NavigationMenuLink className="flex flex-col items-center justify-center gap-2 pb-2 w-72">
+                                <div>
+                                    <img
+                                        className="object-cover w-20 h-20 bg-gray-300 rounded-full"
+                                        src={FotoProfile}
+                                        alt=""
+                                    />
                                 </div>
+                                <b className="w-32 text-center">Moh Ryan Khalifatul Huda</b>
+                                <p>FullStack Developer</p>
+                                <ul className="flex gap-3 justify-evenly">
+                                    {iconsCV.map((item, index) => (
+                                        <Link to={item.link} key={index}>
+                                            <li
+                                                className="p-2 text-sm rounded-full text-textBase bg-first hover:bg-second"
+                                            >
+                                                {item.icon}
+                                            </li>
+                                        </Link>
+                                    ))}
+                                </ul>
                             </NavigationMenuLink>
                         </NavigationMenuContent>
                     </NavigationMenuItem>

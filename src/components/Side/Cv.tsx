@@ -1,27 +1,25 @@
 import { useState } from "react";
-import { FaFacebook } from "react-icons/fa";
-import { FaLinkedin } from "react-icons/fa";
-import { FaDiscord } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import { Progress } from "@/components/ui/progress";
 import { Button } from "../ui/button";
 import { AiOutlineDownload } from "react-icons/ai";
 import { FaArrowCircleRight, FaArrowCircleLeft } from "react-icons/fa"
 import CvMobile from "./components/CV/CvMobile";
+import { IconFacebook, IconDiscord, IconLinkedin } from "../SVG";
 
 export const FotoProfile = "https://res.cloudinary.com/divsnxhmw/image/upload/v1720275146/Portfolio/Profile/zpsisozrmnemianupedr.jpg"
 
 export const iconsCV = [
   {
-    icon: <FaFacebook />,
+    icon: <IconFacebook />,
     link: "#",
   },
   {
-    icon: <FaLinkedin />,
+    icon: <IconLinkedin />,
     link: "#",
   },
   {
-    icon: <FaDiscord />,
+    icon: <IconDiscord />,
     link: "#",
   },
 ];
@@ -62,7 +60,6 @@ interface IProps {
 const Cv = ({ setShowCvMobile }: IProps) => {
   const [skills, setSkills] = useState(false);
   const [showCv, setShowCv] = useState<string>("lg:w-52")
-
 
   return (
     <>
@@ -162,9 +159,11 @@ const Cv = ({ setShowCvMobile }: IProps) => {
             </ul>
           </div>
           <div className="flex justify-center ">
-            <Button className="text-textBase">
-              Download CV <AiOutlineDownload className="pl-2 text-2xl" />
-            </Button>
+            <Link target="_blank" to={"https://drive.google.com/drive/folders/1_YHK5biNhozvYPOXWutxs5gk9p7R-aKm?usp=sharing"}>
+              <Button className="text-textBase">
+                Visit CV <AiOutlineDownload className="pl-2 text-2xl" />
+              </Button>
+            </Link>
           </div>
         </div>
       </div>

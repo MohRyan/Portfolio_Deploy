@@ -24,7 +24,7 @@ const ImagePartner = [
 const Hero = () => {
     return (
         <>
-            <div className="relative flex flex-col w-full bg-white px-14 lg:px-10 lg:flex-row rounded-b-xl dark:bg-dark">
+            <div className="relative flex flex-col w-full pt-10 bg-white lg:pt-0 px-14 lg:px-10 lg:flex-row rounded-b-xl dark:bg-dark">
                 <Random />
                 <div className="flex flex-col justify-center gap-5 ">
                     <div className="flex">
@@ -43,7 +43,7 @@ const Hero = () => {
                     </p>
                     <a href="#contact">
                         <Button className="flex justify-end gap-2 px-8 text-textBase lg:px-20">
-                            HIRE ME <ArrowRight size={20} />
+                            Contact Me <ArrowRight size={20} />
                         </Button>
                     </a>
                     <div className="flex flex-col gap-3">

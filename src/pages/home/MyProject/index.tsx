@@ -27,15 +27,39 @@ export interface IDataMyProject {
 const dataMyProject: IDataMyProject[] = [
   {
     id: 1,
-    title: "Real Estate",
-    img: "https://res.cloudinary.com/divsnxhmw/image/upload/v1719990456/Portfolio/wwispy7jbuzk17kucarn.png",
-    status: Kategori.comingSoon,
+    title: "Cirlce",
+    img: "https://res.cloudinary.com/divsnxhmw/image/upload/v1729726947/Portfolio/lgpljueiqtnwsmfeyshj.png",
+    status: Kategori.real,
     responsive: Responsive.responsive,
-    inspired: "VictorFlow https://www.figma.com/@victorflow",
+    inspired: "DumbwaysId https://dumbways.id/",
   },
   {
     id: 2,
+    title: "DumbFlix",
+    img: "https://res.cloudinary.com/divsnxhmw/image/upload/v1729726544/Portfolio/xrgu6d54o5995lrd7hvv.png",
+    status: Kategori.real,
+    responsive: Responsive.responsive,
+    inspired: "DumbwaysId https://dumbways.id/",
+  },
+  {
+    id: 3,
     title: "Lakoe",
+    img: "https://res.cloudinary.com/divsnxhmw/image/upload/v1729726555/Portfolio/o1nqs2cfgnfs5zyykbog.png",
+    status: Kategori.real,
+    responsive: Responsive.responsive,
+    inspired: "DumbwaysId https://dumbways.id/",
+  },
+  {
+    id: 4,
+    title: "Todos",
+    img: "https://res.cloudinary.com/divsnxhmw/image/upload/v1729726745/Portfolio/dugocdusqttaiibnz2ga.png",
+    status: Kategori.real,
+    responsive: Responsive.noResponsive,
+    inspired: "DumbwaysId https://dumbways.id/",
+  },
+  {
+    id: 5,
+    title: "?",
     img: "https://res.cloudinary.com/divsnxhmw/image/upload/v1719990440/Portfolio/ckvw6go2iauwdw5upzcr.jpg",
     status: Kategori.comingSoon,
     responsive: Responsive.noResponsive,
@@ -69,9 +93,9 @@ const MyProject = () => {
   return (
     <>
       <div className="relative flex flex-col w-full p-4 px-10 py-10 mt-5 bg-white dark:bg-dark dark:text-light rounded-xl">
-        <div className="absolute flex items-center justify-center rounded-full cursor-pointer w-14 h-14 bg-first right-5 top-5">
+        {/* <div className="absolute flex items-center justify-center rounded-full cursor-pointer w-14 h-14 bg-first right-5 top-5">
           <FaPlus size={25} color="white" />
-        </div>
+        </div> */}
         <b className="my-5 text-4xl font-black tracking-wide text-center">
           My Projects
         </b>

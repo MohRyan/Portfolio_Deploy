@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Separator } from "@/components/ui/separator";
 import { Textarea } from "@/components/ui/textarea";
+import Web from "./component/Web";
 
 const MyForm = () => {
     return (
@@ -43,18 +44,7 @@ const MyForm = () => {
                             </ul>
                         </div>
                         <Separator />
-                        <div className="flex justify-start mt-5 ">
-                            <ul className="flex flex-col gap-3 font-bold w-52">
-                                <li>Email:</li>
-                                <li>Linkdn:</li>
-                                <li>Telegram:</li>
-                            </ul>
-                            <ul className="flex flex-col w-1/2 gap-3">
-                                <li>ryanmoh735@gmail.com</li>
-                                <li><a className="text-blue-500" href="https://www.linkedin.com/in/moh-ryan/">Moh Ryan</a></li>
-                                <li>082228872769</li>
-                            </ul>
-                        </div>
+                        <Web />
                         <Separator />
                         <div className="flex justify-start mt-5 ">
                             <ul className="flex flex-col gap-3 font-bold w-52">
