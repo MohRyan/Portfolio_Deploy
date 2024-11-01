@@ -1,7 +1,6 @@
 // import React from "react";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import ListMyProject from "./ListMyServices";
-import { FaPlus } from "react-icons/fa";
 import { useEffect, useState } from "react";
 
 enum Kategori {

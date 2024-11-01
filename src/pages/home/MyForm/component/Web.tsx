@@ -1,5 +1,4 @@
 import { IconGithub, IconLinkedin } from '@/components/SVG'
-import React from 'react'
 
 const Web = () => {
     const styleLink = "flex items-center gap-2 font-bold hover:text-blue-500"
